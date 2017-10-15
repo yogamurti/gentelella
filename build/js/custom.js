@@ -347,13 +347,13 @@ if (typeof NProgress != 'undefined') {
 		
 		
 		var arr_data1 = [
-			[gd(2012, 1, 1), 17],
-			[gd(2012, 1, 2), 74],
-			[gd(2012, 1, 3), 6],
-			[gd(2012, 1, 4), 39],
-			[gd(2012, 1, 5), 20],
-			[gd(2012, 1, 6), 85],
-			[gd(2012, 1, 7), 7]
+			[gd(2017, 9, 16), 24],
+			[gd(2017, 9, 20), 20],
+			[gd(2017, 9, 24), 15],
+			[gd(2017, 9, 28), 17],
+			[gd(2017, 10, 1), 14],
+			[gd(2017, 10, 8), 12],
+			[gd(2017, 10, 15), 10]
 		];
 
 		var arr_data2 = [
@@ -550,7 +550,7 @@ if (typeof NProgress != 'undefined') {
         if ($("#chart_plot_01").length){
 			console.log('Plot1');
 			
-			$.plot( $("#chart_plot_01"), [ arr_data1, arr_data2 ],  chart_plot_01_settings );
+			$.plot( $("#chart_plot_01"), [ arr_data1],  chart_plot_01_settings );
 		}
 		
 		
@@ -695,27 +695,22 @@ if (typeof NProgress != 'undefined') {
 				tooltipFillColor: "rgba(51, 51, 51, 0.55)",
 				data: {
 					labels: [
-						"Symbian",
-						"Blackberry",
-						"Other",
-						"Android",
-						"IOS"
+						"Economy",
+						"Business",
+						"First-class",
 					],
 					datasets: [{
-						data: [15, 20, 30, 10, 30],
+						data: [72, 17, 11],
 						backgroundColor: [
-							"#BDC3C7",
-							"#9B59B6",
-							"#E74C3C",
+							"#3498DB",
 							"#26B99A",
-							"#3498DB"
+							"#9B59B6",
+							
 						],
 						hoverBackgroundColor: [
-							"#CFD4D8",
-							"#B370CF",
-							"#E95E4F",
-							"#36CAAB",
-							"#49A9EA"
+							"#3498DB",
+							"#26B99A",
+							"#9B59B6",
 						]
 					}]
 				},
@@ -1583,8 +1578,8 @@ if (typeof NProgress != 'undefined') {
 			var optionSet1 = {
 			  startDate: moment().subtract(29, 'days'),
 			  endDate: moment(),
-			  minDate: '01/01/2012',
-			  maxDate: '12/31/2015',
+			  minDate: '09/16/2017',
+			  maxDate: '10/15/2017',
 			  dateLimit: {
 				days: 60
 			  },
